@@ -4,6 +4,8 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // → Tell Next.js to statically export on build
+  output: 'export',
   // pick up .mdx in src/app/ and components/
   pageExtensions: ['ts','tsx','md','mdx'],
   // your GitHub Pages path
@@ -16,6 +18,7 @@ const nextConfig = {
 };
 
 export default withMDX({
+  output: 'export',
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [remarkMath],
