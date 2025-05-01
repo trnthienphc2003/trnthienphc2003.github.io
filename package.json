@@ -1,13 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "dev":    "next dev",
-    "build":  "next build",
+    "dev": "next dev",
+    "build": "next build",
     "export": "next export",
     "deploy": "npm run build && npm run export"
   },
-
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@next/mdx": "^15.3.1",
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
