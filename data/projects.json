@@ -1,0 +1,21 @@
+[
+    {
+      "slug": "3d-gaussian-splatting-retrieval",
+      "title": "3D Gaussian Splatting Retrieval",
+      "description": "Benchmark for fine-grained retrieval of 3D object parts using Gaussian splatting.",
+      "tags": ["3D Vision", "Gaussian Splatting", "Benchmark"],
+      "github": "https://github.com/username/3d-gs-retrieval",
+      "demo": "https://username.github.io/demos/gs-retrieval",
+      "date": "2025-04-01",
+      "image": "/images/gs_retrieval.png"
+    },
+    {
+      "slug": "embodied-ai-scene-gen",
+      "title": "Embodied AI Scene Generation",
+      "description": "Learning to generate interactive 3D scenes for embodied agents.",
+      "tags": ["Embodied AI", "Scene Generation"],
+      "github": "https://github.com/username/embodied-ai-scene-gen",
+      "date": "2025-03-10"
+    }
+  ]
+  

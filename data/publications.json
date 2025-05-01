@@ -1,0 +1,17 @@
+[
+    {
+      "citation": "Tran, P., & Smith, J. (2025). 3D Gaussian Splatting Retrieval. In Proceedings of CVPR 2025.",
+      "link": "https://openaccess.thecvf.com/content/CVPR2025/html/Tran_3D_Gaussian_Splatting_Retrieval_CVPR_2025_paper.html",
+      "pdf": "https://arxiv.org/pdf/2504.01234.pdf",
+      "bibtex": "@inproceedings{tran2025dg,...}",
+      "year": 2025,
+      "venue": "CVPR"
+    },
+    {
+      "citation": "Tran, P. et al. (2024). Scene Understanding with 3DGS. IEEE Robotics and Automation Letters.",
+      "link": "https://ieeexplore.ieee.org/document/1234567",
+      "year": 2024,
+      "venue": "RA-L"
+    }
+  ]
+  
