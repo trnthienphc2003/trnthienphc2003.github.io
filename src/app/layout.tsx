@@ -1,6 +1,6 @@
 // src/app/layout.tsx
 import 'katex/dist/katex.min.css';
-import '../globals.css';       // your Tailwind import
+import './globals.css';       // your Tailwind import
 import type { ReactNode } from 'react';
 
 import Footer from "@/app/_components/footer";
