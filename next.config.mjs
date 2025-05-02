@@ -6,6 +6,7 @@ import rehypeKatex from 'rehype-katex';
 const nextConfig = {
   // → Tell Next.js to statically export on build
   output: 'export',
+  trailingSlash: true,
   // pick up .mdx in src/app/ and components/
   pageExtensions: ['ts','tsx','md','mdx'],
   // your GitHub Pages path
