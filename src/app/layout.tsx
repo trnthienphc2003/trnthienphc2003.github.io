@@ -8,8 +8,9 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
-import ThemeProvider from './_components/theme-provider';
+import { ThemeSwitcher } from "@/app/_components/theme-switcher";
+import ThemeProvider from '@/app/_components/theme-provider';
+import NavBar  from '@/app/_components/NavBar';
 
 import "./globals.css";
 
@@ -30,8 +31,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="bg-background font-body text-text">
+        <NavBar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
       </body>
     </html>
   );

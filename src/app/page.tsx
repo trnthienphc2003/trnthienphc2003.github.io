@@ -3,21 +3,50 @@ import { HeroPost } from "@/app/_components/hero-post";
 import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
+import Link from 'next/link';
 
-export default function Home() {
+
+export default function HomePage() {
   return (
-    <main className="prose mx-auto p-6">
-      <h1>Your Name</h1>
-      <p>Short bio, research interests, contact links.</p>
-      <nav className="flex gap-4">
-        <a href="/projects" className="btn btn-primary">Projects</a>
-        <a href="/publications" className="btn btn-secondary">Publications</a>
-        <a href="/math-demo" className="btn">Math Demo</a>
-      </nav>
-    </main>
+    <section className="prose mx-auto px-6 py-16 text-center">
+      <h1 className="font-heading text-5xl text-text mb-4">
+        Thien-Phuc Tran
+      </h1>
+      <p className="font-body text-secondary text-lg max-w-2xl mx-auto">
+        I’m a 3D computer vision researcher—working on Gaussian Splatting, scene generation, and dynamic understanding. Here you’ll find my projects, papers, and interactive demos.
+      </p>
+      <div className="mt-8 flex justify-center gap-4">
+    <Link
+      href="/projects"
+      className="
+        px-6 py-4 
+        bg-accent text-white 
+        rounded-lg 
+        focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2
+        transition-transform duration-200 ease-in-out
+        hover:scale-105 hover:bg-accent/90
+      "
+    >
+      View Projects
+    </Link>
+    <Link
+      href="/posts"
+      className="
+        px-6 py-4 
+        border-2 border-accent text-accent 
+        rounded-lg 
+        focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2
+        transition-transform duration-200 ease-in-out
+        hover:scale-105 hover:bg-accent hover:text-white
+      "
+    >
+      Read Blog
+    </Link>
+  </div>
+
+    </section>
   );
 }
-
 
 // export default function Index() {
 //   const allPosts = getAllPosts();
