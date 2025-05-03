@@ -4,7 +4,7 @@ import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
 import Link from 'next/link';
-import Avatar from "@/app/_components/Avatar";
+import Avatar from "@/app/_components/MyAvatar";
 
 
 export default function HomePage() {
