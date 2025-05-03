@@ -10,12 +10,12 @@ const nextConfig = {
   // pick up .mdx in src/app/ and components/
   pageExtensions: ['ts','tsx','md','mdx'],
   // your GitHub Pages path
-  basePath: process.env.NODE_ENV === 'production'
-    ? '/trnthienphc2003.github.io'
-    : '',
-  assetPrefix: process.env.NODE_ENV === 'production'
-    ? '/trnthienphc2003.github.io/'
-    : '',
+  // basePath: process.env.NODE_ENV === 'production'
+  //   ? '/trnthienphc2003.github.io'
+  //   : '',
+  // assetPrefix: process.env.NODE_ENV === 'production'
+  //   ? '/trnthienphc2003.github.io/'
+  //   : '',
 };
 
 export default withMDX({
