@@ -33,7 +33,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="bg-background font-body text-text">
         <NavBar />
-        <main className="min-h-screen">{children}</main>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

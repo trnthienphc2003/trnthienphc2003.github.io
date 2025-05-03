@@ -4,11 +4,15 @@ import { Intro } from "@/app/_components/intro";
 import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
 import Link from 'next/link';
+import Avatar from "@/app/_components/Avatar";
 
 
 export default function HomePage() {
   return (
     <section className="prose mx-auto px-6 py-16 text-center">
+      <div className="p-6">
+        <Avatar />
+      </div>
       <h1 className="font-heading text-5xl text-text mb-4">
         Thien-Phuc Tran
       </h1>
