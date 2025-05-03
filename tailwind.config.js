@@ -27,6 +27,7 @@ module.exports = {
   },
   content: [
     './src/app/**/*.{ts,tsx,md,mdx}',
+    './src/app/_components/**/*.{ts,tsx}',
     './src/components/**/*.{ts,tsx,md,mdx}',
   ],
   plugins: [require('daisyui')],
