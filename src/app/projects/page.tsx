@@ -1,27 +1,41 @@
-import projects from '../../../data/projects.json';
-import Card from '../_components/Card';
+// src/app/projects/page.tsx
+import projects from '../../../data/projects.json'
+import Card from '@/app/_components/Card'
 
 export default function Projects() {
   return (
-    <section className="p-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {projects.map(p => (
-        <Card
-          key={p.slug}
-          title={p.title}
-          description={p.description}
-          href={p.github}
-          thumbnail={p.image}
+    <section className="w-full py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="font-heading text-3xl text-text mb-8">
+          My Projects
+        </h2>
+        <div
+          className="
+            grid gap-8 
+            grid-cols-[repeat(auto-fill,minmax(300px,1fr))]
+            auto-rows-fr
+          "
         >
-          {p.tags.map(tag => (
-            <span
-              key={tag}
-              className="text-xs bg-secondary text-white px-2 py-1 rounded mr-2"
+          {projects.map((p) => (
+            <Card
+              key={p.slug}
+              title={p.title}
+              description={p.description}
+              href={p.github}
+              thumbnail={p.image}
             >
-              {tag}
-            </span>
+              {p.tags.map((t) => (
+                <span
+                  key={t}
+                  className="text-xs bg-secondary text-white px-2 py-1 rounded mr-2"
+                >
+                  {t}
+                </span>
+              ))}
+            </Card>
           ))}
-        </Card>
-      ))}
+        </div>
+      </div>
     </section>
-  );
+  )
 }

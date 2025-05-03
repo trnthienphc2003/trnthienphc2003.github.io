@@ -11,8 +11,17 @@ interface CardProps {
 
 export default function Card({ title, description, href, thumbnail, children }: CardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      {thumbnail && <img src={thumbnail} alt={title} className="w-full h-40 object-cover" />}
+    <div 
+      className="
+        bg-white rounded-lg shadow-lg overflow-hidden
+        shadow-md
+        transition-transform
+        transition-shadow
+        duration-200 ease-in-out
+        hover:-translate-y-1
+        hover:shadow-xl
+      ">
+      {thumbnail && <img src={thumbnail} alt={title} className="w-full h-48 object-cover flex-shrink-0" />}
       <div className="p-6">
         <h3 className="font-heading text-xl text-text">{title}</h3>
         <p className="font-body text-secondary mt-2">{description}</p>
